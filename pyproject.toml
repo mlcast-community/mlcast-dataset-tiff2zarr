@@ -1,7 +1,17 @@
 [project]
-name = "zarr-converter-v3"
+name = "mlcast-dataset-tiff2zarr"
 version = "0.1.0"
+description = "Generic GeoTIFF → mlcast-compliant Zarr v3 converter"
+authors = [
+    {name = "Gabriele Franch", email = "franch@fbk.eu"},
+]
+readme = "README.md"
 requires-python = ">=3.12"
+license = "Apache-2.0 OR BSD-3-Clause"
+license-files = [
+    "LICENSE-APACHE",
+    "LICENSE-BSD",
+]
 dependencies = [
     "zarr>=3.0",
     "rasterio>=1.4",
@@ -11,3 +21,11 @@ dependencies = [
     "loguru>=0.7",
     "tqdm>=4.67",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+]
+
+[tool.isort]
+profile = "black"
