@@ -720,5 +720,8 @@ def main(
     logger.info(f"Total time: {elapsed:.1f} min")
 
 
-if __name__ == "__main__":
+def run_cli():
     Fire(main)
+
+if __name__ == "__main__":
+    run_cli()

@@ -22,6 +22,9 @@ dependencies = [
     "tqdm>=4.67",
 ]
 
+[project.scripts]
+"mlcast.tiff2zarr" = "zarr_converter_v3:run_cli"
+
 [dependency-groups]
 dev = [
     "pre-commit>=4.2.0",
